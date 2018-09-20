@@ -1,5 +1,5 @@
-connection: "facebook_data"
-
+connection: "bench_redshift"
+#
 # include all the views
 include: "*.view"
 
