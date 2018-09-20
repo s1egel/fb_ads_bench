@@ -33,11 +33,11 @@ explore: ads {
     relationship: many_to_one
   }
 
-  join: customers {
-    type:  left_outer
-    sql_on: ${campaign_utm.utm_campaign} = ${customers.utm} ;;
-    relationship: many_to_one
-  }
+  # join: customers {
+  #   type:  left_outer
+  #   sql_on: ${campaign_utm.utm_campaign} = ${customers.utm} ;;
+  #   relationship: many_to_one
+  # }
 }
 
 explore: ad_insights {

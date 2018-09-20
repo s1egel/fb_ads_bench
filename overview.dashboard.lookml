@@ -235,7 +235,7 @@
     dimensions: [ad_action_insights.action_type]
     measures: [ad_action_insights.total_actions]
     sorts: [ad_action_insights.total_actions desc]
-    limit: 5000
+    limit: 50
     colors: ['#FFCC00', '#1E2023', '#3399CC', '#CC3399', '#66CC66', '#999999', '#FF4E00', '#A2ECBA', '#9932CC', '#0000CD']
     value_labels: legend
     show_view_names: true
