@@ -52,7 +52,8 @@ view: ad_actions_by_placement_and_device {
 
   dimension: placement {
     type: string
-    sql: ${TABLE}._sdc_source_key_placement ;;
+    sql: ${TABLE}._sdc_source_key_platform_position ;;
+#     sql: ${TABLE}._sdc_source_key_placement ;;
   }
 
   dimension: action_destination {

@@ -76,7 +76,8 @@ view: ad_insights_by_placement_and_device {
 
   dimension: placement {
     type: string
-    sql: ${TABLE}.placement ;;
+    sql: ${TABLE}.platform_position ;;
+#     sql: ${TABLE}.placement ;;
   }
 
   dimension: reach {
