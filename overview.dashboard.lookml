@@ -23,7 +23,15 @@
 
   filters:
     - name: campaign_name
-      type: string_filter
+      title: Campaign Name
+      type: field_filter
+      default_value: ''
+      allow_multiple_values: true
+      required: false
+      model: facebook
+      explore: campaigns
+      listens_to_filters: []
+      field: campaigns.name
     - name: date_start
       type: date_filter
 
