@@ -12,8 +12,8 @@
       height: 400
     - elements: [campaign_delivery]
       height: 400
-    - elements: [actions_by_country]
-      height: 400
+    # - elements: [actions_by_country]
+    #   height: 400
     - elements: [campaign_performance_and_clicks]
       height: 400
     - elements: [actions_by_type, avg_frequency_by_objective]
@@ -187,22 +187,22 @@
       campaign_name: ad_insights.campaign_name
       date_start: ad_insights.date_start_date
 
-  - name: actions_by_country
-    title: Actions by country
-    type: looker_geo_choropleth
-    model: facebook
-    explore: ad_insights_by_country
-    dimensions: [ad_insights_by_country.country_iso]
-    measures: [ad_insights_by_country.total_actions]
-    sorts: [ad_insights_by_country.total_actions desc]
-    limit: 5000
-    map: auto
-    colors: ['#FFCC00']
-    show_view_names: true
-    quantize_colors: false
-    listen:
-      campaign_name: ad_insights_by_country.campaign_name
-      date_start: ad_insights_by_country.date_start_date
+  # - name: actions_by_country
+  #   title: Actions by country
+  #   type: looker_geo_choropleth
+  #   model: facebook
+  #   explore: ad_insights_by_country
+  #   dimensions: [ad_insights_by_country.country_iso]
+  #   measures: [ad_insights_by_country.total_actions]
+  #   sorts: [ad_insights_by_country.total_actions desc]
+  #   limit: 5000
+  #   map: auto
+  #   colors: ['#FFCC00']
+  #   show_view_names: true
+  #   quantize_colors: false
+  #   listen:
+  #     campaign_name: ad_insights_by_country.campaign_name
+  #     date_start: ad_insights_by_country.date_start_date
 
   - name: campaign_performance_and_clicks
     title: Campaign performance and clicks
